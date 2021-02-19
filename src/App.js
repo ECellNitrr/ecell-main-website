@@ -42,7 +42,7 @@ const submitIdea = lazy(() =>
 );
 const Dash = lazy(() => import('./Components/iportal/startup/startup'));
 const Error404 = lazy(() => import('./Components/err404'));
-const LeaderBoard = lazy(() => import('./Components/LeaderBoard'));
+const LeaderBoard = lazy(() => import('./Components/LeaderBoard/LeaderBoard'));
 class App extends Component {
   render() {
     return (
@@ -97,8 +97,8 @@ class App extends Component {
               <Route path="/internship/submit_idea/" component={submitIdea} />
               <Route path="/internship/idea/" component={IportalStartup} />
               <Route path="/leaderboard" component={LeaderBoard} />
-              <Route path="/" component={Error404} />              
-         </Switch>
+              <Route path="/" component={Error404} />
+            </Switch>
           </div>
         </Suspense>
       </BrowserRouter>
