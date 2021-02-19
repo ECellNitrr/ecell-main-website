@@ -187,4 +187,13 @@ td {
     padding-left: 10px;
     padding-right: 10px;
   }
+  .leader::after {
+    content: '';
+    height: 2px;
+    display: block;
+    width: 110px;
+    background-color: #fff;
+    position: absolute;
+    left: 51%;
+  }
 }
