@@ -165,16 +165,6 @@ export default class contact extends Component {
           entrepreneurship and serve as a meeting ground for corporate and young
           budding entrepreneurs from distinguished institutions.
         </p>
-        <div className="mobile-number">
-          <div className="oc-contact">
-            <p className="oc-name">Aditya Singh</p>
-            <a href="tel:9174452784">+91 91744 52784</a>
-          </div>
-          <div className="oc-contact">
-            <p className="oc-name">Sumit Chatterjee</p>
-            <a href="tel:7417566851">+91 91744 52784</a>
-          </div>
-        </div>
         <div className="legal">
           <Link to="/terms">Terms and Conditions</Link>
           <br></br>
