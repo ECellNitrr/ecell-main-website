@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Loader from '../api_loader/api_loader';
 import './style.css';
-import Card from './Card';
 import Sidebar from '../Home/Sidebar/Sidebar';
+import Footer from '../Footer/footer';
+
+import Table from './Table';
 
 const LeaderBoard = () => {
   const [contributors, setContributors] = useState([]);
@@ -41,7 +43,13 @@ const LeaderBoard = () => {
     <>
       <div className="main">
         <Sidebar />
-        <Card />
+        <div className="tableContainer">
+          <h1 className="text-center leader">Leaderboard</h1>
+          <div style={{ overflowX: 'auto', width: '100%' }}>
+            <Table data={contributors} />
+          </div>
+        </div>
+        <Footer />
       </div>
     </>
   );
